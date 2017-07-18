@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/green</item>
+
+        <item name="android:statusBarColor">@color/green</item>
+    </style>
+
+    <style name="tab_menu_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">@drawable/tab_menu_bg</item>
+        <item name="android:textColor">@drawable/buttom_menu_text</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="tab_type_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">@color/bg</item>
+
+        <item name="android:textColor">@drawable/tab_menu_text</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="MyTypeTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/green</item>
+        <item name="tabContentStart">20dp</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">@color/bg</item>
+        <item name="tabSelectedTextColor">@color/green</item>
+        <item name="tabTextAppearance">@style/TabText</item>
+        <item name="tabMode">fixed</item>
+        <item name="tabGravity">center</item>
+    </style>
+    <style name="TabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/darkgray</item>
+        <item name="textAllCaps">true</item>
+    </style>
+    <style name="type_item">
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@drawable/tab_menu_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+<style name="myratingbar" parent="@android:style/Widget.RatingBar">
+<item name="android:progressDrawable">@drawable/ratingstars</item>
+<item name="android:maxHeight">16dp</item>
+    <item name="android:minHeight">16dp</item>
+    <item name="android:stepSize">1</item>
+
+
+</style>
+
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.songyanjun.myhospital">
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:name=".LeanCloud.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.Resign"/>
+        <activity android:name=".Fragement1.Bottom_Toolbar" />
+        <activity android:name=".Fragement1.DetailActivity" />
+        <activity android:name=".Fragement2.Apartment"/>
+        <activity android:name=".Fragement3.Type"/>
+        <activity android:name=".Fragement3.Type1"/>
+        <activity android:name=".Fragement3.Apply_Flag"/>
+        <activity android:name=".Fragement3.Apply_Redbag"/>
+        <activity android:name=".Fragement4.self_EvaluationActivity"/>
+        <activity android:name=".Fragement4.look_evaluationActivity"/>
+        <activity android:name=".Fragement3.SucceedActivity"/>
+        <activity android:name=".Fragement4.SucceedActivity1"/>
+    </application>
+
+    <provider
+        android:authorities="com.example.songyanjun.myhospital"
+        android:name="android.support.v4.content.FileProvider"
+        android:exported="false"
+        android:grantUriPermissions="true">
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/filepaths">
+        </meta-data>
+    </provider>
+</manifest>

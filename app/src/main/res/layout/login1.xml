@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/green"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="用户登录"
+            android:textSize="22dp"
+            android:textColor="@color/lightgreen"
+            />
+        </android.support.v7.widget.Toolbar>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/login_form"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+        android:layout_marginTop="96dp"
+                tools:context="cn.leancloud.leanstoragegettingstarted.LoginActivity">
+
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- Login progress -->
+            <ProgressBar
+                android:id="@+id/login_progress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+                android:background="@color/lingray"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+
+                    android:hint="@string/username"
+                    android:textColor="@color/darkgray"
+                    android:textColorHint="@color/lightgray"                    android:inputType="text"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:background="@null"
+                    android:singleLine="true"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_height="1dp"
+                android:background="@color/lingray"/>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                >
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:hint="@string/prompt_password"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:textColor="@color/darkgray"
+                    android:textColorHint="@color/lightgray"                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:maxLines="1"
+                    android:background="@null"
+                    android:singleLine="true"/>
+
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+                android:background="@color/lingray"/>
+            <Button
+                android:id="@+id/username_login_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/botton_shape"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/lightgreen"
+                android:text="@string/loginin"/>
+
+            <Button
+                android:id="@+id/username_register_button"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/botton_shape1"
+                android:textSize="14sp"
+                android:textColor="@color/darkgray"
+                android:text="@string/resign"
+                tools:ignore="HardcodedText"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="忘记密码？"
+                android:textColor="@color/darkgray"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

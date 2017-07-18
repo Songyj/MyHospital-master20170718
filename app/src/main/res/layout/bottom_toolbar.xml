@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.Login">
+
+
+
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rb_homepage"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_homepage"
+            android:text="@string/tab_menu_homepage" />
+
+        <RadioButton
+            android:id="@+id/rb_department"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_department"
+            android:text="@string/tab_menu_department" />
+
+        <RadioButton
+            android:id="@+id/rb_award"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_award"
+            android:text="@string/tab_menu_award" />
+
+        <RadioButton
+            android:id="@+id/rb_evaluate"
+            style="@style/tab_menu_item"
+            android:drawableTop="@drawable/tab_menu_evaluate"
+            android:text="@string/tab_menu_evaluate" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@id/rg_tab_bar"
+        android:background="@color/white" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rg_tab_bar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

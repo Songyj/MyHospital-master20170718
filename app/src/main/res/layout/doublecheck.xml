@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@drawable/border"
+        android:text="确定提交评价？"
+        android:textSize="16sp"
+        android:textColor="@color/green"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/Btn_No"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:background="#FFFFFF"
+            android:text="取消"
+            android:textSize="16sp"
+            android:textColor="@color/darkgray"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:id="@+id/Btn_Yes"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:background="@drawable/border1"
+            android:text="提交"
+            android:textSize="16sp"
+            android:textColor="@color/darkgray"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+</LinearLayout>

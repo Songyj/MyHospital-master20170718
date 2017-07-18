@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/apply_fl_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/green"
+        app:contentInsetStart="0dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        toolbar:navigationIcon="@drawable/back">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="退还红包"
+            android:textSize="22dp"
+            android:textColor="@color/lightgreen"
+
+            />
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rb_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:text="类型"
+                    android:textColor="@color/green"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:id="@+id/text_rb_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:drawablePadding="4dp"
+                    android:drawableRight="@drawable/rightarray"
+                    android:textSize="14dp"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/titlegray"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:text="金额"
+                    android:textColor="@color/green"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:id="@+id/text_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:hint="请输入金额"
+                    android:textColor="@color/darkgray"
+                    android:textColorHint="@color/lightgray"
+                    android:textSize="14dp"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/titlegray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:text="科室"
+                    android:textColor="@color/green"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/text_department"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:drawablePadding="4dp"
+                    android:drawableRight="@drawable/rightarray"
+                    android:textSize="14dp"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/titlegray"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:text="姓名"
+                    android:textColor="@color/green"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:id="@+id/text_person1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:hint="请输入接收人姓名"
+                    android:textColor="@color/darkgray"
+                    android:textColorHint="@color/lightgray"
+                    android:textSize="14dp"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/titlegray"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:text="病人/家属"
+                    android:textColor="@color/green"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:id="@+id/text_person2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="36dp"
+                    android:background="@null"
+                    android:hint="请输入赠送人姓名"
+                    android:textColor="@color/darkgray"
+                    android:textColorHint="@color/lightgray"
+                    android:textSize="14dp"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/titlegray"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:text="床位信息"
+                    android:textColor="@color/green"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:id="@+id/text_room"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:hint="请输入床位信息"
+                    android:textColor="@color/darkgray"
+                    android:textColorHint="@color/lightgray"
+                    android:textSize="14dp"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/titlegray"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:text="经办人"
+                    android:textColor="@color/green"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:id="@+id/text_person4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="36dp"
+                    android:background="@null"
+                    android:hint="请输入退回红包经办人"
+                    android:textColor="@color/darkgray"
+                    android:textColorHint="@color/lightgray"
+                    android:textSize="14dp"
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/titlegray"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:text="签收人"
+                    android:textColor="@color/green"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:id="@+id/text_person5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:hint="请输入退回红包签收人"
+                    android:textColor="@color/darkgray"
+                    android:textColorHint="@color/lightgray"
+                    android:textSize="14dp"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/titlegray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:text="时间"
+                    android:textColor="@color/green"
+                    android:textSize="14dp"
+                    />
+
+                <TextView
+                    android:id="@+id/text_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:hint="请选择日期"
+                    android:textColor="@color/darkgray"
+                    android:textColorHint="@color/lightgray"
+                    android:textSize="14dp"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/titlegray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:text="填表人"
+                    android:textColor="@color/green"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:id="@+id/text_person3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:hint="请输入填表人姓名"
+                    android:textColor="@color/darkgray"
+                    android:textColorHint="@color/lightgray"
+                    android:textSize="14dp"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/titlegray"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:background="@null"
+                    android:text="备注"
+                    android:textColor="@color/green"
+                    android:textSize="14dp"
+                    />
+
+                <EditText
+                    android:id="@+id/text_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:hint="输入说明"
+                    android:textColor="@color/darkgray"
+                    android:textColorHint="@color/lightgray"
+                    android:textSize="14dp"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/titlegray"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传图片证明"
+                    android:textColor="@color/green"
+                    android:textSize="14sp"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/apply_img"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp"
+                    android:scaleType="center"
+                    android:src="@drawable/image"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <Button
+                        android:id="@+id/set_camera"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/tab_menu_bg2"
+                        android:text="拍照"
+                        android:textColor="@drawable/tab_menu_text2"
+                        android:textSize="14sp"
+                        />
+
+                    <Button
+                        android:id="@+id/take_photo"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="64dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/tab_menu_bg2"
+                        android:text="相册"
+                        android:textColor="@drawable/tab_menu_text2"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/titlegray"
+                />
+
+            <Button
+                android:id="@+id/Btn_submit"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/botton_shape"
+                android:gravity="center"
+                android:text="提交申请"
+                android:textColor="@color/lightgreen"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/apply_fl_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:minHeight="?attr/actionBarSize"-->
+        <!--android:background="@color/green"-->
+        <!--app:contentInsetStart="0dp"-->
+        <!--app:contentInsetEnd="0dp"-->
+        <!--app:contentInsetLeft="0dp"-->
+        <!--app:contentInsetRight="0dp"-->
+        <!--toolbar:navigationIcon="@drawable/back">-->
+        <!--<TextView-->
+            <!--android:id="@+id/Apply_Type"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:textSize="22dp"-->
+            <!--android:textColor="@color/lightgreen"-->
+            <!--android:text="拒收红包"-->
+            <!--/>-->
+    <!--</android.support.v7.widget.Toolbar>-->
+
+</LinearLayout>
